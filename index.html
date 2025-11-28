@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannah Xue | Creative Portfolio & Resume</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font family -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Custom Scrollbar for better aesthetics on dark theme */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #4f46e5;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background-color: #1f2937;
+        }
+        /* Style for the background image in the intro section */
+        .intro-bg {
+            background-image: url('https://placehold.co/1920x800/0f172a/ffffff?text=Abstract+Architecture+or+Minimal+Studio');
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#111827',
+                        'secondary-dark': '#1f2937',
+                        'accent': '#4f46e5',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-primary-dark text-gray-200">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-secondary-dark/95 backdrop-blur-sm shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold text-accent tracking-tight">Hannah Xue</h1>
+            <nav class="space-x-4">
+                <a href="#resume" class="text-lg font-medium text-gray-300 hover:text-accent transition duration-300">Resume</a>
+                <a href="#portfolio" class="text-lg font-medium text-gray-300 hover:text-accent transition duration-300">Portfolio</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Introduction Section (Now with Background Image) -->
+        <section id="intro" class="py-16 md:py-24 text-center bg-cover bg-center relative overflow-hidden intro-bg rounded-xl shadow-2xl">
+            <!-- Dark Overlay for better text readability -->
+            <div class="absolute inset-0 bg-black/70 rounded-xl"></div> 
+            
+            <div class="relative z-10 text-gray-100">
+                <h2 class="text-5xl md:text-7xl font-bold mb-4">Visual Storyteller & UX Designer</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Bridging design innovation with visual storytelling. I create meaningful digital experiences and capture moments that matter.</p>
+                <div class="mt-8 space-x-4">
+                    <a href="#resume" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-accent hover:bg-indigo-700 transition duration-300">
+                        View Resume
+                    </a>
+                    <a href="#portfolio" class="inline-flex items-center justify-center px-6 py-3 border border-accent text-base font-medium rounded-lg shadow-sm text-accent hover:bg-accent/10 transition duration-300">
+                        See Portfolio
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="py-16 md:py-24 border-t border-gray-700">
+            <h2 class="text-4xl font-bold text-gray-100 mb-12 text-center">Professional Resume</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+                <!-- Sidebar: Contact & Skills -->
+                <div class="lg:col-span-1 space-y-8 p-6 bg-secondary-dark rounded-xl shadow-2xl">
+                    
+                    <!-- Contact -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-accent mb-4 border-b border-gray-700 pb-2">Contact</h3>
+                        <ul class="space-y-2 text-gray-400">
+                            <li><strong class="text-gray-200">Email:</strong> hannah.xue@email.com</li>
+                            <li><strong class="text-gray-200">Phone:</strong> (555) 987-6543</li>
+                            <li><strong class="text-gray-200">Location:</strong> Seattle, WA</li>
+                            <li><strong class="text-gray-200">LinkedIn:</strong> /in/hannahxuephoto</li>
+                        </ul>
+                    </div>
+
+                    <!-- Skills -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-accent mb-4 border-b border-gray-700 pb-2">Technical Skills</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded-full text-sm">UI/UX Design</span>
+                            <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded-full text-sm">Figma & Sketch</span>
+                            <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded-full text-sm">Photography (DSLR/Mirrorless)</span>
+                            <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded-full text-sm">Adobe Creative Suite</span>
+                            <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded-full text-sm">HTML, CSS, JS</span>
+                            <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded-full text-sm">Content Strategy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content: Experience & Education -->
+                <div class="lg:col-span-2 space-y-12">
+
+                    <!-- Professional Summary -->
+                    <div class="bg-secondary-dark p-6 rounded-xl shadow-2xl">
+                        <h3 class="text-2xl font-semibold text-accent mb-4 border-b border-gray-700 pb-2">Summary</h3>
+                        <p class="text-gray-300">Highly motivated and detail-oriented Creative Professional with 5+ years of experience in user-centric design, digital marketing, and high-quality visual production. Proven ability to lead projects from concept to launch, enhancing brand visibility and user engagement across multiple platforms.</p>
+                    </div>
+
+                    <!-- Experience -->
+                    <div>
+                        <h3 class="text-3xl font-semibold text-accent mb-6">Experience</h3>
+                        
+                        <!-- Job 1 -->
+                        <div class="border-l-4 border-accent pl-4 mb-8">
+                            <h4 class="text-xl font-bold text-gray-100">Lead Product Designer</h4>
+                            <p class="text-indigo-300 font-medium">Innovatech Solutions | 2022 - Present</p>
+                            <ul class="list-disc list-inside mt-2 text-gray-400 space-y-1">
+                                <li>Directed the redesign of the flagship mobile application, resulting in a 30% increase in user retention.</li>
+                                <li>Managed a team of 3 junior designers, providing mentorship and standardizing design systems (Figma).</li>
+                                <li>Collaborated closely with engineering and product management teams to ensure technical feasibility and business alignment.</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Job 2 -->
+                        <div class="border-l-4 border-accent pl-4 mb-8">
+                            <h4 class="text-xl font-bold text-gray-100">Freelance Commercial Photographer</h4>
+                            <p class="text-indigo-300 font-medium">Self-Employed | 2018 - 2022</p>
+                            <ul class="list-disc list-inside mt-2 text-gray-400 space-y-1">
+                                <li>Executed over 50 commercial photoshoots for clients in the F&B, real estate, and lifestyle sectors.</li>
+                                <li>Handled all post-production editing, color grading, and final asset delivery.</li>
+                                <li>Negotiated contracts and maintained excellent client relationships, leading to high repeat business.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div>
+                        <h3 class="text-3xl font-semibold text-accent mb-6">Education</h3>
+                        
+                        <div class="border-l-4 border-accent pl-4">
+                            <h4 class="text-xl font-bold text-gray-100">B.A. in Visual Arts</h4>
+                            <p class="text-indigo-300 font-medium">University of Washington | 2014 - 2018</p>
+                            <p class="mt-2 text-gray-400">Concentration in Digital Media and Photography. Graduated with Honors.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Photography Portfolio Section -->
+        <section id="portfolio" class="py-16 md:py-24 border-t border-gray-700">
+            <h2 class="text-4xl font-bold text-gray-100 mb-12 text-center">Photography Portfolio</h2>
+            <p class="text-lg text-gray-400 mb-10 text-center max-w-4xl mx-auto">A selection of recent work spanning urban landscapes, nature, and commercial detail. Click an image to view it larger.</p>
+
+            <!-- Responsive Image Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Portfolio Item 1 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-[1.02]">
+                    <img src="https://placehold.co/800x600/1e293b/a5b4fc?text=Urban+Landscape" alt="Urban Landscape" class="w-full h-full object-cover transition duration-500 group-hover:opacity-75">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                        <p class="text-white text-xl font-semibold">Urban Abstraction</p>
+                    </div>
+               
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-[1.02]">
+                    <img src="https://placehold.co/600x800/374151/d1d5db?text=Forest+Path" alt="Forest Path" class="w-full h-full object-cover transition duration-500 group-hover:opacity-75">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                        <p class="text-white text-xl font-semibold">Into the Woods</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-[1.02]">
+                    <img src="https://placehold.co/600x600/9ca3af/1f2937?text=Food+Photography" alt="Food Photography" class="w-full h-full object-cover transition duration-500 group-hover:opacity-75">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                        <p class="text-white text-xl font-semibold">Culinary Detail</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-[1.02]">
+                    <img src="https://placehold.co/1200x500/4b5563/e5e7eb?text=Macro+Detail" alt="Macro Detail" class="w-full h-full object-cover transition duration-500 group-hover:opacity-75">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                        <p class="text-white text-xl font-semibold">Textural Focus</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 5 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-[1.02]">
+                    <img src="https://placehold.co/600x800/000000/ffffff?text=Portrait+(B&W)" alt="Black and White Portrait" class="w-full h-full object-cover transition duration-500 group-hover:opacity-75">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                        <p class="text-white text-xl font-semibold">Contemplation</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 6 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-[1.02]">
+                    <img src="https://placehold.co/800x600/334155/6366f1?text=Abstract+Light" alt="Abstract Light Photography" class="w-full h-full object-cover transition duration-500 group-hover:opacity-75">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                        <p class="text-white text-xl font-semibold">Light Study</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-dark border-t border-gray-700 mt-12 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400">
+            <p>&copy; 2025 Hannah Xue. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for simple interaction (optional, but good practice for smooth scroll) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    document.querySelector(targetId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
