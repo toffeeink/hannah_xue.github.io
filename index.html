@@ -25,7 +25,9 @@
         }
         /* Style for the background image in the intro section */
         .intro-bg {
-            background-image: url('https://placehold.co/1920x800/0f172a/ffffff?text=  ');
+            background-image: url('asset/mountain.jpg');
+            background-size: cover;
+            background-position: center;
         }
     </style>
     <script>
@@ -47,7 +49,7 @@
     <!-- Header & Navigation -->
     <header class="sticky top-0 z-50 bg-secondary-dark/95 backdrop-blur-sm shadow-xl">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-extrabold text-accent tracking-tight">Hannah Xue</h1>
+            <h1 class="text-3xl font-extrabold text-accent tracking-tight">Hannah Xue</h1>
             <nav class="space-x-4">
                 <a href="#resume" class="text-lg font-medium text-gray-300 hover:text-accent transition duration-300">Resume</a>
                 <a href="#portfolio" class="text-lg font-medium text-gray-300 hover:text-accent transition duration-300">Portfolio</a>
@@ -61,16 +63,16 @@
         <!-- Introduction Section (Now with Background Image) -->
         <section id="intro" class="py-16 md:py-24 text-center bg-cover bg-center relative overflow-hidden intro-bg rounded-xl shadow-2xl">
             <!-- Dark Overlay for better text readability -->
-            <div class="absolute inset-0 bg-black/70 rounded-xl"></div> 
+            <div class="absolute inset-0 bg-black/30 rounded-xl"></div> 
             
             <div class="relative z-10 text-gray-100">
-                <h2 class="text-5xl md:text-7xl font-bold mb-4">Reservoir Engineering | Business Analytics</h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">I'm a Reservoir Engineer that vibe code ☕</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Reservoir Engineering | Business Analytics</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">I'm a seasoned Reservoir Engineer that also vibe code ☕</p>
                 <div class="mt-8 space-x-4">
                     <a href="#resume" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-accent hover:bg-indigo-700 transition duration-300">
                         View Resume
                     </a>
-                    <a href="#portfolio" class="inline-flex items-center justify-center px-6 py-3 border border-accent text-base font-medium rounded-lg shadow-sm text-accent hover:bg-accent/10 transition duration-300">
+                    <a href="#portfolio" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-accent hover:bg-indigo-700 transition duration-300">
                         See Portfolio
                     </a>
                 </div>
@@ -129,18 +131,21 @@
                             <h4 class="text-xl font-bold text-gray-100">Senior Reservoir Engineer</h4>
                             <p class="text-indigo-300 font-medium">ConocoPhillips | 2024 - Present</p>
                             <ul class="list-disc list-inside mt-2 text-gray-400 space-y-1">
-                                <li>Directed the redesign of the flagship mobile application, resulting in a 30% increase in user retention.</li>
-                                <li>Managed a team of 3 junior designers, providing mentorship and standardizing design systems (Figma).</li>
-                                <li>Collaborated closely with engineering and product management teams to ensure technical feasibility and business alignment.</li>
+                                <li>Supported safe execution and continuity through hMRO→hCOP integration</li>
+                                <li>Supported safe delivery toward the 7.7-rig 2025 plan (375 MBOEPD / $2.2B capex target) by tightening surveillance, startup readiness, and cross-team coordination for the AOR.
+                                <li>Led the Eagle Ford Redev & Refrac Study; revamped SLOT24 risking model (remainingresource driven), and coded novel the SLATE ensemble risking model—improving median forecast error ~20% vs. baselines and enabling inventory high-grading and LRP linkage. Going beyond legacy workflow, owned SLATE end-to-end and built credibility as a technical leader by driving development
+and socializing results with peers and senior stakeholders to secure buy-in.</li>
+                                <li>Participated AAR on frac hit incident on one pad, investigated potential geological structural driver by analyzing pressure signal and historical records.
+Created Spotfire dashboard to evaluate records of Wellview drilling mudloss correlation.</li>
                             </ul>
                         </div>
                         <div class="border-l-4 border-accent pl-4 mb-8">
                             <h4 class="text-xl font-bold text-gray-100">Advanced Reservoir Engineer</h4>
                             <p class="text-indigo-300 font-medium">Marathon Oil | 2023 - 2024</p>
                             <ul class="list-disc list-inside mt-2 text-gray-400 space-y-1">
-                                <li>Directed the redesign of the flagship mobile application, resulting in a 30% increase in user retention.</li>
-                                <li>Managed a team of 3 junior designers, providing mentorship and standardizing design systems (Figma).</li>
-                                <li>Collaborated closely with engineering and product management teams to ensure technical feasibility and business alignment.</li>
+                                <li>Eagle Ford development - subsurface - Contributed to subsurface evaluation and econ analysis for 12 project sanctions for codev/redev/refrac plan of development scenarios for AFEs (authorization for expenditure).</li>
+                                <li>Managed flowback for 32 new WTS (well to sale) online, contributed to pre-flowback planning, choke management and weekly execution summary.</li>
+                                <li>Continuously monitored wells on production and communicated with field personnel regarding performance, performing lookback study on underperforming wells and routine PDP forecasting.</li>
                             </ul>
                         </div>
                         <!-- Job 2 -->
@@ -148,15 +153,15 @@
                             <h4 class="text-xl font-bold text-gray-100">Schlumberger Technology</h4>
                             <p class="text-indigo-300 font-medium">Data Scientist | 2023 - 2023</p>
                             <ul class="list-disc list-inside mt-2 text-gray-400 space-y-1">
-                                <li>Executed over 50 commercial photoshoots for clients in the F&B, real estate, and lifestyle sectors.</li>
-                                <li>Handled all post-production editing, color grading, and final asset delivery.</li>
-                                <li>Negotiated contracts and maintained excellent client relationships, leading to high repeat business.</li>
+                                <li>Joined the 'Fit for Basin' team to develop a cloud-native app in reservoir engineering domain. Championed RURM – Rapid unconventional reservoir modeling with ML assisted historymatch;</li>
+                                <li>Subject Matter Expert in developing Multisegment DCA and Completion Optimization. Created data flow diagram for user cases connecting multiple micro-services. Developed auto-flow regime identification algorithm.</li>
+                                <li>Contributed in data science hackathons, notably winning Gold at the Devon Energy Hackathon 2022 for a 3D wellbore visualization dashboard and securing the Innovation Award at the SPE Machine Learning Challenge 2023 for CCUS Leakage Detection, sponsored by ExxonMobil;</li>
                             </ul>
                             <p class="text-indigo-300 font-medium">(Senior) Reservoir Engineer | 2013 - 2023</p>
                             <ul class="list-disc list-inside mt-2 text-gray-400 space-y-1">
-                                <li>Executed over 50 commercial photoshoots for clients in the F&B, real estate, and lifestyle sectors.</li>
-                                <li>Handled all post-production editing, color grading, and final asset delivery.</li>
-                                <li>Negotiated contracts and maintained excellent client relationships, leading to high repeat business.</li>
+                                <li>Work in RE/Stimulation domain consulting business providing integrated subsurface studies - Unconventionals Frac design, modeling and numerical flow simulation</li>
+                                <li>- Ensemble-based simulation to address uncertainty, Model calibration leveraging monitoring and subsurface surveillance data</li>
+                                <li>Carbon Storage dynamic modeling for subsurface CO2 plume migration in support for client's permitting process.</li>
                             </ul>
                         </div>
                     </div>
