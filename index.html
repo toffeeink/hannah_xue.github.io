@@ -454,7 +454,7 @@
             const loadVisitorInsights = async () => {
                 try {
                     const [geoData, countries] = await Promise.all([
-                        fetchJson('https://ipapi.co/json/'),
+                        fetchJson('https://geojs.io/api/geoip'),
                         fetchJson('https://restcountries.com/v3.1/all?fields=cca2,name,flags')
                     ]);
 
