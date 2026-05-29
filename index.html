@@ -454,11 +454,11 @@
             const loadVisitorInsights = async () => {
                 try {
                     const [geoData, countries] = await Promise.all([
-                        fetchJson('https://ipwho.is/'),
+                        fetchJson('https://ipapi.co/json/'),
                         fetchJson('https://restcountries.com/v3.1/all?fields=cca2,name,flags')
                     ]);
 
-                    if (!geoData.success || !geoData.country_code) {
+                    if (!geoData.country_code) {
                         throw new Error('Could not determine visitor location.');
                     }
 
