@@ -51,6 +51,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <h1 class="text-3xl font-extrabold text-accent tracking-tight">Hannah Xue</h1>
             <nav class="space-x-4">
+                <a href="#visitors" class="text-lg font-medium text-gray-300 hover:text-accent transition duration-300">Visitors</a>
                 <a href="#resume" class="text-lg font-medium text-gray-300 hover:text-accent transition duration-300">Resume</a>
                 <a href="#portfolio" class="text-lg font-medium text-gray-300 hover:text-accent transition duration-300">Portfolio</a>
             </nav>
@@ -79,6 +80,65 @@
             </div>
         </section>
 
+        <!-- Visitor Insights Section -->
+        <section id="visitors" class="py-16 md:py-24 border-t border-gray-700">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-100 mb-4">Visitor Insights</h2>
+                    <p class="text-lg text-gray-400 max-w-3xl mx-auto">See the current visitor's flag and a live country leaderboard built from public geolocation and counter services.</p>
+                </div>
+
+                <div class="grid grid-cols-1 xl:grid-cols-3 gap-8">
+                    <div class="xl:col-span-1 bg-secondary-dark rounded-xl shadow-2xl p-6 space-y-6">
+                        <div>
+                            <p class="text-sm uppercase tracking-[0.2em] text-indigo-300 mb-2">Current Visitor</p>
+                            <div id="visitor-current-card" class="rounded-xl border border-gray-700 bg-primary-dark/60 p-5 min-h-[220px] flex flex-col justify-center">
+                                <div class="animate-pulse space-y-4">
+                                    <div class="h-16 w-24 bg-gray-700 rounded-lg"></div>
+                                    <div class="h-6 w-2/3 bg-gray-700 rounded"></div>
+                                    <div class="h-5 w-1/2 bg-gray-800 rounded"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="rounded-xl border border-gray-700 bg-primary-dark/60 p-4">
+                                <p class="text-sm text-gray-400">Countries reached</p>
+                                <p id="visitor-country-total" class="text-3xl font-bold text-gray-100 mt-2">--</p>
+                            </div>
+                            <div class="rounded-xl border border-gray-700 bg-primary-dark/60 p-4">
+                                <p class="text-sm text-gray-400">Tracked visits</p>
+                                <p id="visitor-total-visits" class="text-3xl font-bold text-gray-100 mt-2">--</p>
+                            </div>
+                        </div>
+
+                        <p id="visitor-status" class="text-sm text-gray-400 leading-relaxed">Loading visitor data…</p>
+                    </div>
+
+                    <div class="xl:col-span-2 bg-secondary-dark rounded-xl shadow-2xl p-6">
+                        <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6">
+                            <div>
+                                <p class="text-sm uppercase tracking-[0.2em] text-indigo-300 mb-2">Country Leaderboard</p>
+                                <h3 class="text-2xl font-semibold text-gray-100">Visitors by country</h3>
+                            </div>
+                            <p class="text-sm text-gray-400">Top countries with recorded visits</p>
+                        </div>
+
+                        <div id="visitor-country-list" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="rounded-xl border border-gray-700 bg-primary-dark/60 p-4 animate-pulse">
+                                <div class="h-5 w-1/3 bg-gray-700 rounded mb-3"></div>
+                                <div class="h-4 w-2/3 bg-gray-800 rounded"></div>
+                            </div>
+                            <div class="rounded-xl border border-gray-700 bg-primary-dark/60 p-4 animate-pulse">
+                                <div class="h-5 w-1/4 bg-gray-700 rounded mb-3"></div>
+                                <div class="h-4 w-1/2 bg-gray-800 rounded"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Resume Section -->
         <section id="resume" class="py-16 md:py-24 border-t border-gray-700">
             <h2 class="text-4xl font-bold text-gray-100 mb-12 text-center">Professional Resume</h2>
@@ -92,8 +152,6 @@
                     <div>
                         <h3 class="text-2xl font-semibold text-accent mb-4 border-b border-gray-700 pb-2">Contact</h3>
                         <ul class="space-y-2 text-gray-400">
-                            <li><strong class="text-gray-200">Email:</strong> xhan521@gmail.com</li>
-                            <li><strong class="text-gray-200">Phone:</strong> (555) 587-0681</li>
                             <li><strong class="text-gray-200">Location:</strong> Houston TX</li>
                             <li><strong class="text-gray-200">LinkedIn:</strong> https://www.linkedin.com/in/hannah-xue-ic/</li>
                         </ul>
@@ -101,14 +159,14 @@
 
                     <!-- Skills -->
                     <div>
-                        <h3 class="text-2xl font-semibold text-accent mb-4 border-b border-gray-700 pb-2">Technical Skills</h3>
+                        <h3 class="text-2xl font-semibold text-accent mb-4 border-b border-gray-700 pb-2">Expertise</h3>
                         <div class="flex flex-wrap gap-2">
                             <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded-full text-sm">Reservoir Engineering</span>
-                            <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded-full text-sm">Simulation</span>
+                            <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded-full text-sm">Business Analytics</span>
                             <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded-full text-sm">Mature Field Development</span>
                             <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded-full text-sm">Workflow Automation</span>
-                            <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded-full text-sm">Data Analytics</span>
-                            <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded-full text-sm">Visual Storytelling</span>
+                            <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded-full text-sm">Economic Evaluation</span>
+                            <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded-full text-sm">Strategic Decision-Making</span>
                         </div>
                     </div>
                 </div>
@@ -119,7 +177,7 @@
                     <!-- Professional Summary -->
                     <div class="bg-secondary-dark p-6 rounded-xl shadow-2xl">
                         <h3 class="text-2xl font-semibold text-accent mb-4 border-b border-gray-700 pb-2">Summary</h3>
-                        <p class="text-gray-300">Highly motivated and detail-oriented Reservoir Engineer with 12+ years of experience in simulation, mature field development, and workflow automation. Proven ability to leverage data analytics and visual storytelling to drive informed decision-making and optimize field performance.</p>
+                        <p class="text-gray-300">Bringing together deep domain expertise, asset development experience, innovation, strategic decision-making, and leadership to drive economic value creation in upstream Oil&Gas</p>
                     </div>
 
                     <!-- Experience -->
@@ -131,12 +189,10 @@
                             <h4 class="text-xl font-bold text-gray-100">Senior Reservoir Engineer</h4>
                             <p class="text-indigo-300 font-medium">ConocoPhillips | 2024 - Present</p>
                             <ul class="list-disc list-inside mt-2 text-gray-400 space-y-1">
-                                <li>Supported safe execution and continuity through hMRO→hCOP integration</li>
-                                <li>Supported safe delivery toward 2025 plan (350+ MBOEPD / $2B + capex target) by tightening surveillance, startup readiness, and cross-team coordination for the AOR.
-                                <li>Led the Eagle Ford Redev & Refrac Study; revamped risking model (remaining resource driven), and coded novel the SLATE ensemble risking model—improving median forecast error ~20% vs. baselines and enabling inventory high-grading and LRP linkage. Going beyond legacy workflow, owned SLATE end-to-end and built credibility as a technical leader by driving development
-and socializing results with peers and senior stakeholders to secure buy-in.</li>
-                                <li>Participated AAR on frac hit event, investigated potential geological structural driver by analyzing pressure signal and historical records.
-Created Spotfire dashboard for data driven evaluation</li>
+                                <li>Acquisition Integration - Value Enhancement through hMRO→hCOP integration</li>
+                                <li>Field development - Supported safe delivery toward 2025 plan, cross-team coordination for the AOR.
+                                <li>Optimization - Led innovation project that goes beyond legacy workflow, and engaged development and senior stakeholders to secure buy-in.</li>
+
                             </ul>
                         </div>
                         <div class="border-l-4 border-accent pl-4 mb-8">
@@ -187,11 +243,11 @@ Created Spotfire dashboard for data driven evaluation</li>
 
         <!-- Photography Portfolio Section -->
         <section id="portfolio" class="py-16 md:py-24 border-t border-gray-700">
-            <h2 class="text-4xl font-bold text-gray-100 mb-12 text-center">Photography Portfolio</h2>
-            <p class="text-lg text-gray-400 mb-10 text-center max-w-4xl mx-auto">A selection of recent work. Click an image to view it larger.</p>
+            <h2 class="text-4xl font-bold text-gray-100 mb-12 text-center">Academic/Personal Project Portfolio</h2>
+            <p class="text-lg text-gray-400 mb-10 text-center max-w-4xl mx-auto">A collection of academic and personal projects.</p>
 
             <!-- Responsive Image Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 opacity-40 grayscale">
 
                 <!-- Portfolio Item 1 -->
                 <div class="group relative overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-[1.02]">
@@ -212,7 +268,7 @@ Created Spotfire dashboard for data driven evaluation</li>
 
                 <!-- Portfolio Item 3 -->
                 <div class="group relative overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-[1.02]">
-                    <img src="https://placehold.co/600x600/9ca3af/1f2937?text=Food+Photography" alt="Food Photography" class="w-full h-full object-cover transition duration-500 group-hover:opacity-75">
+                    <img src="https://placehold.co/600x600/9ca3af/1f2937?text=Photo+Memories" alt="Photo Memories" class="w-full h-full object-cover transition duration-500 group-hover:opacity-75">
                     <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
                         <p class="text-white text-xl font-semibold">Detail</p>
                     </div>
@@ -267,6 +323,193 @@ Created Spotfire dashboard for data driven evaluation</li>
                     });
                 });
             });
+
+            const COUNTER_NAMESPACE = 'hannah-xue-resume-country-visits';
+            const DAILY_VISITOR_KEY = 'hannah-xue-resume-last-visit';
+            const currentCard = document.getElementById('visitor-current-card');
+            const countryList = document.getElementById('visitor-country-list');
+            const statusText = document.getElementById('visitor-status');
+            const countryTotal = document.getElementById('visitor-country-total');
+            const totalVisits = document.getElementById('visitor-total-visits');
+
+            const fetchJson = async (url) => {
+                const response = await fetch(url, { cache: 'no-store' });
+                if (!response.ok) {
+                    throw new Error(`Request failed: ${response.status}`);
+                }
+                return response.json();
+            };
+
+            const getTodayStamp = () => new Date().toISOString().slice(0, 10);
+
+            const formatCount = (value) => new Intl.NumberFormat('en-US').format(value);
+
+            const setCurrentVisitorCard = ({ countryName, flagUrl, count, countryCode }) => {
+                currentCard.innerHTML = `
+                    <div class="flex items-center gap-4 mb-5">
+                        <img src="${flagUrl}" alt="Flag of ${countryName}" class="h-16 w-24 object-cover rounded-lg border border-gray-600 shadow-lg">
+                        <div>
+                            <p class="text-xs uppercase tracking-[0.25em] text-indigo-300">${countryCode}</p>
+                            <h3 class="text-2xl font-semibold text-gray-100">${countryName}</h3>
+                        </div>
+                    </div>
+                    <div class="rounded-xl bg-indigo-950/40 border border-indigo-800/60 p-4">
+                        <p class="text-sm text-gray-300">Tracked visits from this country</p>
+                        <p class="text-4xl font-bold text-white mt-2">${formatCount(count)}</p>
+                    </div>
+                `;
+            };
+
+            const setErrorState = (message) => {
+                currentCard.innerHTML = `
+                    <div class="rounded-xl border border-red-900/60 bg-red-950/20 p-5">
+                        <h3 class="text-xl font-semibold text-red-200 mb-2">Visitor data unavailable</h3>
+                        <p class="text-sm text-red-100/80">${message}</p>
+                    </div>
+                `;
+
+                countryList.innerHTML = `
+                    <div class="md:col-span-2 rounded-xl border border-red-900/60 bg-red-950/20 p-5">
+                        <p class="text-red-100/80 text-sm">The country leaderboard could not be loaded right now.</p>
+                    </div>
+                `;
+
+                countryTotal.textContent = '--';
+                totalVisits.textContent = '--';
+                statusText.textContent = 'Visitor insights could not be loaded. If the page is opened locally, some browsers or networks may block external API requests.';
+            };
+
+            const renderLeaderboard = (entries) => {
+                if (!entries.length) {
+                    countryList.innerHTML = `
+                        <div class="md:col-span-2 rounded-xl border border-gray-700 bg-primary-dark/60 p-5">
+                            <p class="text-gray-300">No country visits have been recorded yet. The first visitor will start the leaderboard.</p>
+                        </div>
+                    `;
+                    return;
+                }
+
+                countryList.innerHTML = entries.map((entry, index) => `
+                    <div class="rounded-xl border border-gray-700 bg-primary-dark/60 p-4 flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-4 min-w-0">
+                            <div class="h-10 w-10 rounded-full bg-indigo-900/60 text-indigo-200 flex items-center justify-center font-semibold shrink-0">${index + 1}</div>
+                            <img src="${entry.flagUrl}" alt="Flag of ${entry.name}" class="h-10 w-14 object-cover rounded border border-gray-600 shrink-0">
+                            <div class="min-w-0">
+                                <p class="text-gray-100 font-medium truncate">${entry.name}</p>
+                                <p class="text-sm text-gray-400">${entry.code}</p>
+                            </div>
+                        </div>
+                        <div class="text-right shrink-0">
+                            <p class="text-2xl font-bold text-white">${formatCount(entry.count)}</p>
+                            <p class="text-xs uppercase tracking-[0.2em] text-gray-400">visits</p>
+                        </div>
+                    </div>
+                `).join('');
+            };
+
+            const getCountryCount = async (countryCode) => {
+                try {
+                    const data = await fetchJson(`https://api.countapi.xyz/get/${COUNTER_NAMESPACE}/${countryCode}`);
+                    return Number(data.value || 0);
+                } catch (error) {
+                    return 0;
+                }
+            };
+
+            const incrementCountryCount = async (countryCode) => {
+                const data = await fetchJson(`https://api.countapi.xyz/hit/${COUNTER_NAMESPACE}/${countryCode}`);
+                return Number(data.value || 0);
+            };
+
+            const loadLeaderboardCounts = async (countriesByCode) => {
+                const codes = Array.from(countriesByCode.keys());
+                const chunkSize = 24;
+                const entries = [];
+
+                for (let index = 0; index < codes.length; index += chunkSize) {
+                    const chunk = codes.slice(index, index + chunkSize);
+                    const chunkResults = await Promise.all(
+                        chunk.map(async (code) => {
+                            const count = await getCountryCount(code);
+                            if (!count) {
+                                return null;
+                            }
+
+                            const country = countriesByCode.get(code);
+                            return {
+                                code,
+                                count,
+                                name: country.name,
+                                flagUrl: country.flagUrl
+                            };
+                        })
+                    );
+
+                    entries.push(...chunkResults.filter(Boolean));
+                }
+
+                return entries.sort((left, right) => right.count - left.count);
+            };
+
+            const loadVisitorInsights = async () => {
+                try {
+                    const [geoData, countries] = await Promise.all([
+                        fetchJson('https://ipwho.is/'),
+                        fetchJson('https://restcountries.com/v3.1/all?fields=cca2,name,flags')
+                    ]);
+
+                    if (!geoData.success || !geoData.country_code) {
+                        throw new Error('Could not determine visitor location.');
+                    }
+
+                    const countriesByCode = new Map(
+                        countries
+                            .filter(country => country.cca2 && country.name?.common)
+                            .map(country => [country.cca2.toUpperCase(), {
+                                name: country.name.common,
+                                flagUrl: country.flags?.svg || country.flags?.png || `https://flagcdn.com/w80/${country.cca2.toLowerCase()}.png`
+                            }])
+                    );
+
+                    const visitorCountryCode = geoData.country_code.toUpperCase();
+                    const visitorCountry = countriesByCode.get(visitorCountryCode) || {
+                        name: geoData.country || visitorCountryCode,
+                        flagUrl: `https://flagcdn.com/w80/${visitorCountryCode.toLowerCase()}.png`
+                    };
+
+                    const countedToday = localStorage.getItem(DAILY_VISITOR_KEY) === getTodayStamp();
+                    const currentCountryCount = countedToday
+                        ? await getCountryCount(visitorCountryCode)
+                        : await incrementCountryCount(visitorCountryCode);
+
+                    if (!countedToday) {
+                        localStorage.setItem(DAILY_VISITOR_KEY, getTodayStamp());
+                    }
+
+                    setCurrentVisitorCard({
+                        countryName: visitorCountry.name,
+                        flagUrl: visitorCountry.flagUrl,
+                        count: currentCountryCount,
+                        countryCode: visitorCountryCode
+                    });
+
+                    const leaderboardEntries = await loadLeaderboardCounts(countriesByCode);
+                    const rankedEntries = leaderboardEntries.slice(0, 8);
+                    renderLeaderboard(rankedEntries);
+
+                    countryTotal.textContent = formatCount(leaderboardEntries.length);
+                    totalVisits.textContent = formatCount(
+                        leaderboardEntries.reduce((sum, entry) => sum + entry.count, 0)
+                    );
+                    statusText.textContent = countedToday
+                        ? 'This browser was already counted today, so the page loaded the latest totals without incrementing them again.'
+                        : 'This browser has been counted once for today. Totals refresh automatically as new visitors arrive from more countries.';
+                } catch (error) {
+                    setErrorState(error.message || 'Unexpected error while loading visitor insights.');
+                }
+            };
+
+            loadVisitorInsights();
         });
     </script>
 </body>
